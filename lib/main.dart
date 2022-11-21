@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart'; // flutter
 import 'package:go_router/go_router.dart'; // goroute packages
+import 'home_screen.dart'; // importing home_screen page
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: HomeScreen,
     );
   }
 }
